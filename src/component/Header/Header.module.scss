@@ -1,0 +1,45 @@
+.header {
+    z-index: 2;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 30px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-size: 14px;
+    .leftBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .logo img {
+            width: 70%;
+        }
+    }
+    .rightBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .cart img {
+            height: 30px;
+            width: 30px;
+        }
+        .cashback {
+            button {
+                background-color: #eb1f40;
+                border-radius: 4px;
+                height: 2vw;
+                width: 100%;
+                color: #ffff;
+                font-size: 1.1vw;
+            }
+        }
+    }
+}

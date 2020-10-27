@@ -1,0 +1,217 @@
+.main {
+    padding: 15px 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    .setsBlock {
+        background-color: #8ed8f7;
+        .setsImg {
+            overflow: hidden;
+            img {
+                width: 100%;
+                position: relative;
+                top: -30px;
+                transition: 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+            }
+        }
+        .setsText {
+            font-size: 3.5vw;
+            margin: 0 0 0 15%;
+        }
+        &:hover {
+            img {
+                top: 0;
+            }
+        }
+    }
+    .sushiAndRollsBlock {
+        background-color: #f32b2b;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        img {
+            width: 100%;
+        }
+        .everyBlock {
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            text-align: center;
+            img {
+                width: 100%;
+                position: relative;
+                transition: 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+            }
+        }
+        .rollsBlock {
+            .rollsImg {
+                img {
+                    left: -30px;
+                }
+            }
+            .rollsText {
+                font-size: 1.5vw;
+                padding: 0 10% 0 0;
+            }
+            &:hover img {
+                left: 15px;
+            }
+        }
+        .sushiBlock {
+            .sushiImg {
+                img {
+                    right: -60px;
+                }
+            }
+            .sushiText {
+                padding: 0 5% 0 0;
+                font-size: 1.5vw;
+            }
+            &:hover {
+                img {
+                    right: 0;
+                }
+            }
+        }
+        .friedRollsBlock {
+            .friedRollsImg {
+                img {
+                    left: -30px;
+                }
+            }
+            .friedRollsText {
+                font-size: 1.2vw;
+                padding: 0 15% 0 0;
+            }
+            &:hover img {
+                left: 0;
+            }
+        }
+        .bakedRollsBlock {
+            .bakedRollsImg {
+                img {
+                    right: -60px;
+                }
+            }
+            .bakedRollsText {
+                font-size: 1.2vw;
+            }
+            &:hover img {
+                right: 0;
+            }
+        }
+    }
+    .wokBlock {
+        background-color: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .wokTitle {
+            color: #f32b2b;
+            font-weight: bold;
+            line-height: 1;
+            text-transform: uppercase;
+            padding: 10% 10% 1% 10%;
+            font-size: 3.5vw;
+            span {
+                font-size: 1vw;
+            }
+        }
+        img {
+            position: relative;
+            width: 150%;
+            margin-top: -20%;
+            left: -70px;
+            transition: 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+        }
+        &:hover {
+            img {
+                left: 0;
+            }
+        }
+    }
+    .fourthBlock {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        .soupBlock {
+            background-color: #f32b2b;
+            display: grid;
+            grid-template-rows: 5fr 1fr;
+            .soupImg {
+                overflow: hidden;
+                text-align: center;
+                img {
+                    position: relative;
+                    width: 90%;
+                    top: -90px;
+                    transition: 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+                }
+            }
+            .soupTitle {
+                font-size: 3.5vw;
+                font-weight: bold;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding-left: 13%;
+                margin-top: -10%;
+            }
+            &:hover img {
+                transform: rotate(-60deg);
+                
+            }
+        }
+        .lastBlock {
+            overflow: hidden;
+            background-color: #9fe48b;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            font-size: 1.8vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #f32b2b;
+            .tempuaBlock {
+                display: flex;
+                align-items: center;
+                .tempuaImg{
+                    img{
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        right: 60px;
+                        transition: 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+                    }
+                }
+                .tempuaTitle{
+                }
+                &:hover img{
+                    right: 0px;
+                }
+            }
+            .shakeBlock {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .shakeImg{
+                    img{
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        top: 70px;
+                        transition: 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+                    }
+                }
+                .shakeTitle{
+                    padding: 0 0 0 10%;
+                }
+                &:hover img{
+                    top: 30px;
+                }
+            }
+        }
+    }
+}

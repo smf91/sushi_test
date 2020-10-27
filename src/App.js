@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React from 'react'
+import { BrowserRouter, Route } from 'react-router-dom';
+import { connect, Provider } from 'react-redux';
+import HeaderContainer from './component/Header/HeaderContainer'
+import FooterContainer from './component/Footer/FooterContainer'
+import MainContainer from './component/Main/MainContainer'
+import CatalogContainer from './component/Catalog/CatalogContainer'
 
-function App() {
+const App = ({ store }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Provider store={store}>
+        <div className="app">
+          <HeaderContainer />
+          <div className="wrapper">
+            <Route exact path='/' render={() => <MainContainer />} />
+            <Route path='/catalog' render={() => <CatalogContainer />} />
+          </div>
+          <FooterContainer />
+        </div>
+      </Provider>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default connect(null, {})(App)
