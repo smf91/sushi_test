@@ -1,11 +1,10 @@
 .catalogBlock {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    // background-color: red;
 }
 
 .cardProductWrapper {
-    margin: 5px;
+    margin: 3px;
     background-color: #efeff4;
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -22,24 +21,22 @@
         .productDescription {
             padding: 10px 0 0 0;
             color: #333;
-            .productName{
+            .productName {
                 font-size: 1.15vw;
             }
-            .productComposition{
+            .productComposition {
                 padding: 10px 0 0 0;
                 font-size: 0.67vw;
-                
             }
-
         }
         .productPrice {
             display: flex;
             align-items: center;
             padding: 0 0 10px 0;
-            img{
+            img {
                 height: 17px;
             }
-            button{
+            button {
                 background-color: #eb1f40;
                 border-radius: 4px;
                 height: 2vw;

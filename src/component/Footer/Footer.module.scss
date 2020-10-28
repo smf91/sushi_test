@@ -6,12 +6,12 @@
     width: 100%;
     background-color: #fff;
     padding: 0 30px;
-
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    font-size: 14px;
+    font-size: 13px;
+    color: #999;
     .leftBlock {
         display: flex;
         flex-direction: row;

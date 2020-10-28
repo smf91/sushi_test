@@ -7,39 +7,65 @@
     width: 100%;
     background-color: #fff;
     padding: 0 30px;
-    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     font-size: 14px;
     .leftBlock {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        font-size: 13px;
+        color: #999;
+        text-align: center;
         align-items: center;
-        justify-content: space-between;
         .logo img {
-            width: 70%;
+            position: relative;
+            width: 100%;
+        }
+        .city {
+            padding: 0 0 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        .phone {
         }
     }
     .rightBlock {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 2fr 1fr 0.3fr;
+        font-size: 13px;
+        color: #999;
         align-items: center;
-        .cart img {
-            height: 30px;
-            width: 30px;
+        .cart {
+            text-align: right;
+            img {
+                height: 30px;
+                width: 30px;
+            }
         }
         .cashback {
+            padding: 0 10px;
             button {
-                background-color: #eb1f40;
-                border-radius: 4px;
-                height: 2vw;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                border-radius: 19px;
+                background-color: white;
+                color: #9b9b9b;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
                 width: 100%;
-                color: #ffff;
-                font-size: 1.1vw;
+                font-size: 1.3vw;
+                img{
+                    padding: 0 0 0 10px;
+                }
             }
+        }
+        .aboutBlock {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: left;
+            align-items: center;
         }
     }
 }
