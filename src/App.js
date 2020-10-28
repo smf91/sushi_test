@@ -15,7 +15,7 @@ const App = ({ store }) => {
           <HeaderContainer />
           <div className="wrapper">
             <Route exact path='/' render={() => <MainContainer />} />
-            <Route path='/catalog' render={() => <CatalogContainer />} />
+            <Route path='/catalog/:foodType' render={() => <CatalogContainer />} />
           </div>
           <FooterContainer />
         </div>

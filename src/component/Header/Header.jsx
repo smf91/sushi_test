@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import cls from './Header.module.scss';
 import logo from '../../assets/images/logo.png'
 import cart from '../../assets/images/cart.png'
@@ -9,9 +10,11 @@ const Header = (props) => {
     return (
         <header className={cls.header}>
             <div className={cls.leftBlock}>
+            <Link to='/'>
                 <div className={cls.logo}>
                     <img src={logo} alt="imglogo"/>
                 </div>
+            </Link>
                 <div className={cls.city}>
                     <img src={ru} alt="imgru"/>
                     <span>Волгоград</span>
